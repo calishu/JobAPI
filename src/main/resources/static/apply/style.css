@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    color: var(--clr-primary-a30);
+    background-color: var(--clr-surface-a0);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+
+    border-style: solid;
+    border-color: var(--clr-primary-a30);
+    border-width: 5px;
+    border-radius: 25px;
+
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+}
+
+.mainContainer h1 {
+    font-weight: 800;
+
+    margin: 0 auto;
+    /*margin-top: 25px;*/
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+/* FORM */
+.form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 10px;
+    width: 100%;
+}
+
+.formName {
+    display: flex;
+    gap: 15px;
+}
+
+.formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    background-color: var(--clr-primary-a50);
+    border-style: solid;
+    border-color: var(--clr-primary-a30);
+    border-width: 5px;
+    height: 25px;
+    border-radius: 25px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.form input:focus {
+    border-color: var(--clr-primary-a10);
+    outline: none;
+}
+
+.form button {
+    border: none;
+    border-radius: 20px;
+    background-color: var(--clr-primary-a30);
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.form button, .form input {
+    padding: 10px;
+    font-size: 20px;
+    transition: ease 150ms;
+    width: calc(100% - 30px);
+}
+
+.form button:hover {
+    background-color: var(--clr-primary-a10);
+}
+
+
+/* INPUT FILE */
+
+#form2 {
+    flex-grow:1;
+    margin-right: 15px;
+}
+
+.FileInput {
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
+    gap: 15px;
+    width: 100%;
+    padding: 5px;
+
+    border-style: solid;
+    border-color: var(--clr-primary-a30);
+    border-width: 5px;
+    border-radius: 25px;
+}
+
+.FileButton {
+    text-align: center;
+    width: 150px;
+    background-color: var(--clr-primary-a30);
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.FileButton:hover {
+    background-color: var(--clr-primary-a10);
+}
+
+#fileName {
+    flex: 2;
+    color: var(--clr-primary-a50);
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+input[type="file"] {
+    display: none;
+}

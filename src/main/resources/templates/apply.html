@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="'Apply as a ' + ${titleData.name}"></title>
+        <link rel="stylesheet" href="apply/color.css" />
+        <link rel="stylesheet" href="apply/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="apply/script.js"></script>
+    </head>
+
+    <body>
+        <div class="mainContainer">
+            <h1 th:text="'Apply for ' + ${titleData.name}"></h1>
+
+            <div class="formContainer">
+                <form id="form1" class="form">
+                    <div class="formName">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+
+                    <input type="date" id="birthday" placeholder="Birthday" required>
+                    <input type="email" id="email" placeholder="E-Mail Address" required>
+                    <input type="text" id="phonenumber" placeholder="Phone Number" required>
+                    <input type="text" id="address" placeholder="Address" required>
+
+                    <div class="formName"> <!-- This isnt a name, rather the address lmao. Just using the same style. -->
+                        <input type="text" id="address2" placeholder="Address Line 2 (optional)">
+                        <input type="text" id="city" placeholder="City" required>
+                    </div>
+
+                    <div class="formName">
+                        <input type="text" id="postal" placeholder="Postal Code" required>
+                        <input type="text" id="state" placeholder="State" required>
+                    </div>
+                    <button type="submit">Next</button>
+                </form>
+
+                <form id="form2">
+                    <div class="FileInput">
+                        <input type="file" id="coverLetter" accept=".pdf" hidden required>
+                        <label for="coverLetter" class="FileButton">Add your <br>cover letter</label>
+                        <span id="coverLetterName">No file chosen</span>
+                    </div>
+
+                    <div class="FileInput">
+                        <input type="file" id="resumee" accept=".pdf" hidden required>
+                        <label for="resumee" class="FileButton">Add your <br>resumee</label>
+                        <span id="resumeeName">No file chosen</span>
+                    </div>
+
+                    <div class="FileInput">
+                        <input type="file" id="additionalFiles" accept="image/*,.doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,pdf" hidden>
+                        <label for="additionalFiles" class="FileButton">Add your <br>additional files</label>
+                        <span id="additionalFilesName">No file chosen</span>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

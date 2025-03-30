@@ -1,0 +1,23 @@
+/* https://colorffy.com/dark-theme-generator */
+:root {
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+    --clr-primary-a0: #cc61b9;
+    --clr-primary-a10: #d374c1;
+    --clr-primary-a20: #d986c9;
+    --clr-primary-a30: #e097d0;
+    --clr-primary-a40: #e6a9d8;
+    --clr-primary-a50: #ebbae0;
+    --clr-surface-a0: #1c1a36;
+    --clr-surface-a10: #322f4a;
+    --clr-surface-a20: #49455e;
+    --clr-surface-a30: #605d73;
+    --clr-surface-a40: #797689;
+    --clr-surface-a50: #9290a0;
+    --clr-surface-tonal-a0: #2c2142;
+    --clr-surface-tonal-a10: #413655;
+    --clr-surface-tonal-a20: #564c68;
+    --clr-surface-tonal-a30: #6d637c;
+    --clr-surface-tonal-a40: #847b91;
+    --clr-surface-tonal-a50: #9b94a6;
+}
